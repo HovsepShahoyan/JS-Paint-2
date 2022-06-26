@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="style.css">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name= "viewport" content=""width=device-width, initial-scale="1.0">
+      <title>My Paint</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="all">
+         <canvas id="canvas" height="400" width="550" style="border:1px 
+            solid #000000;">
+         </canvas>
+         <div id="instruments">
+            <button id="brush" type="button"><i class="fa fa-paint-brush"></i></button>  
+            <input oninput="colors(this.value)" type="color" id="colors" class="color-selector">   
+            <button type="button" id="circle"></button>
+            <button type="button" id="line"></button>  
+            <button type="button" id="rectangle"></button>                
+            <button type="button" id="spray"><i class='fa-solid fa-brush'></i></i></button>
+            <button type="button" id="fill"></button>
+            <button type="button" id="clear"></button>
+         </div>
+         <div id="chooseColors">
+            <button onclick="colors('green')" id="green" type="button" style="background-color: green;"></button>
+            <button onclick="colors('red')" id="red" type="button" style="background-color: red;"></button>
+            <button onclick="colors('purple')" id="purple" type="button" style="background-color: purple;"></button>
+            <button onclick="colors('blue')" id="blue" type="button" style="background-color: blue;"></button>     
+         </div>
+      </div>
+      <script src="app.js"></script>
+   </body>
