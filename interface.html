@@ -11,24 +11,56 @@
    </head>
    <body>
       <div id="all">
+       <div class="num1">
+              
+         <div id="instruments">
+            <button id="brush" type="button"><i class="fa fa-paint-brush"></i></button>  
+            <button type="button" id="circle"><img src="images/circle.png" /></button>
+            <button type="button" id="line"><img src="images/line.png" /></button>  
+            <button type="button" id="rectangle"><img src="images/rectangle.png" /></button>                
+            <button type="button" id="spray"><i class='fa-solid fa-brush'></i></i><img src="images/spray.png" /></button>
+            <button type="button" id="fill"><img src="images/fill.png" /></button>
+            <button type="button" id="clear"> <img src="images/recycleBin.png" type="button" id="clear"></button></button>
+         </div>
          <canvas id="canvas" height="400" width="550" style="border:1px 
             solid #000000;">
          </canvas>
-         <div id="instruments">
-            <button id="brush" type="button"><i class="fa fa-paint-brush"></i></button>  
-            <input oninput="colors(this.value)" type="color" id="colors" class="color-selector">   
-            <button type="button" id="circle"></button>
-            <button type="button" id="line"></button>  
-            <button type="button" id="rectangle"></button>                
-            <button type="button" id="spray"><i class='fa-solid fa-brush'></i></i></button>
-            <button type="button" id="fill"></button>
-            <button type="button" id="clear"></button>
-         </div>
+      </div>
          <div id="chooseColors">
-            <button onclick="colors('green')" id="green" type="button" style="background-color: green;"></button>
-            <button onclick="colors('red')" id="red" type="button" style="background-color: red;"></button>
-            <button onclick="colors('purple')" id="purple" type="button" style="background-color: purple;"></button>
-            <button onclick="colors('blue')" id="blue" type="button" style="background-color: blue;"></button>     
+            <img src="images/colorSelector.png" class="colorImg"/>
+            <input  oninput="colors(this.value)" type="color" id="colors" value="#c0c0c0" class="color-selector">   
+            <div class="smallColors">
+               <button onclick="colors('green')" id="green" type="button" style="background-color: green;"></button>
+               <button onclick="colors('red')" id="red" type="button" style="background-color: red;"></button>
+               <button onclick="colors('purple')" id="purple" type="button" style="background-color: purple;"></button>
+               <button onclick="colors('blue')" id="blue" type="button" style="background-color: blue;"></button>
+               <button onclick="colors('darkblue')" id="darkblue" type="button" style="background-color: darkblue;"></button>
+               <button onclick="colors('midnightblue')" id="midnightblue" type="button" style="background-color: midnightblue;"></button>
+               <button onclick="colors('pink')" id="pink" type="button" style="background-color: pink;"></button>
+               <button onclick="colors('orange')" id="orange" type="button" style="background-color: orange;"></button> 
+               <button onclick="colors('lightcoral')" id="lightcoral" type="button" style="background-color: lightcoral;"></button>
+               <button onclick="colors('orangered')" id="orangered" type="button" style="background-color: orangered;"></button>
+               <button onclick="colors('black')" id="black" type="button" style="background-color: black;"></button>
+               <button onclick="colors('rgb(110, 207, 30)')" id=" rgb(110, 207, 30)" type="button" style="background-color: rgb(110, 207, 30);"></button>   
+               <button onclick="colors(' rgb(21, 194, 247)')" id=" rgb(21, 194, 247)" type="button" style="background-color: rgb(21, 194, 247);"></button>
+               <button onclick="colors('aqua')" id="aqua" type="button" style="background-color: aqua;"></button>
+               <button onclick="colors('sienna')" id="sienna" type="button" style="background-color: sienna;"></button>
+               <button onclick="colors('cadetblue')" id="cadetblue" type="button" style="background-color: cadetblue;"></button>
+               <button onclick="colors('darkkhaki')" id="darkkhaki" type="button" style="background-color: darkkhaki;"></button>
+               <button onclick="colors('firebrick')" id="firebrick" type="button" style="background-color: firebrick;"></button>
+               <button onclick="colors('goldenrod')" id="goldenrod" type="button" style="background-color: goldenrod;"></button> 
+               <button onclick="colors('hotpink')" id="hotpink" type="button" style="background-color: hotpink;"></button>
+               <button onclick="colors('tan')" id="tan" type="button" style="background-color: tan;"></button>
+               <button onclick="colors('royalblue')" id="royalblue" type="button" style="background-color: royalblue;"></button>
+               <button onclick="colors('slateblue')" id="slateblue" type="button" style="background-color: slateblue"></button>  
+                <button onclick="colors('slategray')" id="slategray" type="button" style="background-color: slategray;"></button> 
+               <button onclick="colors('rgb(0, 133, 138)')" id="rgb(0, 133, 138)" type="button" style="background-color: rgb(0, 133, 138);"></button>
+               <button onclick="colors('rgb(235, 138, 11)')" id="rgb(235, 138, 11)" type="button" style="background-color: rgb(235, 138, 11);"></button>
+               <button onclick="colors('rebeccapurple')" id="rebeccapurple" type="button" style="background-color: rebeccapurple;"></button>
+               <button onclick="colors('greenyellow')" id="greenyellow" type="button" style="background-color: greenyellow"></button>  
+                   
+            </div>
+       
          </div>
       </div>
       <script src="app.js"></script>
